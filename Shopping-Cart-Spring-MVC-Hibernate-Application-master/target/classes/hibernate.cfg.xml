@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="sessionFactory">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db3</property>
+  <property name="hibernate.connection.username">krisha</property>
+  <property name="hibernate.connection.password">11235813krisha.</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <property name="hibernate.show_sql">true</property>
+  
+  <mapping class="com.krisha.ecomm.pojo.User"/>
+  <mapping class="com.krisha.ecomm.pojo.Email"/>
+  <mapping class="com.krisha.ecomm.pojo.Person"/>
+  <mapping class="com.krisha.ecomm.pojo.Adverts"/>
+  <mapping class="com.krisha.ecomm.pojo.Category"/>
+  <mapping class="com.krisha.ecomm.pojo.Cart"/>
+ </session-factory>
+</hibernate-configuration>
